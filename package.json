@@ -1,0 +1,22 @@
+{
+  "name": "callback_hell",
+  "version": "1.0.0",
+  "description": "\"# learning_nodejs\"",
+  "main": "async_promise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HashFarmer/learning_nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HashFarmer/learning_nodejs/issues"
+  },
+  "homepage": "https://github.com/HashFarmer/learning_nodejs#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.0"
+  }
+}
