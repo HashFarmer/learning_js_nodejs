@@ -1,5 +1,5 @@
 //outer -> inner
-
+//nested async callback to execute sync operations
 setTimeout(()=>{
     console.log('preparing x value.');
     let x = 3;
