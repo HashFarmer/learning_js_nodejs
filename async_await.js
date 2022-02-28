@@ -18,6 +18,6 @@ async function loadFile(){
 //这个loadFile还是返回promise吗？
 //但是这个loadFile并没有返回什么值，应该是不会返回promise了。
 
-//console.log("Before aysnc function");
-loadFile();//即便是async函数内部也是拆开执行。
-//console.log("After aysnc function");
+console.log("Before aysnc function");
+loadFile();//即便是async函数内部也是拆开执行。但是async内部前后顺序没有打乱，await后面的语句没有跑到前面。
+console.log("After aysnc function");
