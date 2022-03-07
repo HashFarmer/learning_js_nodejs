@@ -21,3 +21,4 @@ async function loadFile(){
 console.log("Before aysnc function");
 loadFile();//即便是async函数内部也是拆开执行。但是async内部前后顺序没有打乱，await后面的语句没有跑到前面。
 console.log("After aysnc function");
+

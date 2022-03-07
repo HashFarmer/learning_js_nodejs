@@ -1,6 +1,6 @@
 /*
 Asynchronous callbacks
-An asynchronous callback is executed after the execution of the high-order function that uses the callback.
+An asynchronous callback is executed after the execution of the "high-order function" that uses the "callback".
 
 Asynchronicity means that if JavaScript has to wait for an operation to complete, it will execute the rest of the code while waiting.
 
