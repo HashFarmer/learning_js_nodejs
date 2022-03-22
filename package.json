@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/HashFarmer/learning_nodejs#readme",
   "dependencies": {
+    "express": "^4.17.3",
     "node-fetch": "^3.2.0"
   }
 }

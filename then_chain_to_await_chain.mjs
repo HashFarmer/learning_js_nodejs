@@ -1,14 +1,15 @@
 import fetch from 'node-fetch';
 
-const fetchPokemon = async(id) => {
+const fetchPokemon = async() => {
 
-    console.log("Before await");
-    //这3条语句中间不能有中断？
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+    console.log("Before await in async ");
+
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon/ditto');
     const data = await res.json();
     console.log(data);
-    //
-    console.log("After await");
+    
+    //只有以上三句执行完后才执行这句
+    console.log("After await in async");
 };
 
-fetchPokemon(2);
+fetchPokemon();
