@@ -1,0 +1,9 @@
+const fs = require('fs');
+fs.readFile('ind.txt',(error, txString)=>{
+	if(error) throw error;
+	console.log(txString.toString());
+})
+
+像以上的这种callback方式的异步实现，无法转换为promise asyn-await方式吧?
+
+只有返回promise的才可以被await修饰吧？是的，参照await_just_for_promise.js

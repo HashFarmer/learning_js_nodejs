@@ -1,0 +1,1 @@
+promise中含有未定的resolve与reject，待具体化
