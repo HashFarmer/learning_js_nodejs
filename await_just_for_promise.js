@@ -2,13 +2,19 @@ var fs = require("fs");
 
 async function foo() {
 
-    //await 只对返回值为promise的有效？
-    const content = await fs.readFile('input.txt');
+    //await 只对返回值为promise的有效？是的！
+    //const content = await fs.readFile('input.txt');
+
+    const data = await fs.promises.readFile('./example.txt', {encoding:'utf-8'});
 
     console.log(data.toString());
 
+    console.log(data);
+
 }
 
+
+//这个foo()本质就是一个promise-then
 foo();
 
 /*
