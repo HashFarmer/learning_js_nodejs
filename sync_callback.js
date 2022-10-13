@@ -1,3 +1,5 @@
+// callback并不一定就是异步的
+
 function isOdd(number) {
 	return number % 2 != 0;
   }
