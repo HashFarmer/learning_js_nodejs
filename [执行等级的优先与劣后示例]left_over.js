@@ -6,3 +6,17 @@ for(i =0; i<1000000000; i++){
 //if(i==999999999) console.log(i);
 }
 console.log("hello, no setTimeout!")
+
+
+
+
+//函数内部的setTimeout也被放置在程序最后执行
+function printString(){
+    console.log("first line in function"); 
+    setTimeout(function()  { console.log("second line in function"); }, 0); 
+   console.log("Third line in function")
+ }
+
+console.log("before function.");
+printString();
+console.log("after function.");
