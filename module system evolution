@@ -1,0 +1,54 @@
+
+1, CommonJS module system
+
+CommonJS is a module specification for JavaScript that defines how modules can be loaded and used in a program. 
+It was created to address the lack of a standard module system in JavaScript, and it has since become widely adopted by the Node.js community.
+
+In the CommonJS module system, a module is defined as a separate file that contains a set of related functions, objects, or values. 
+These modules can be loaded into a program using the require function, which takes the path to the module file as an argument.
+
+Each module in CommonJS has its own scope, which means that the variables and functions defined in one module are not visible in another 
+module unless they are explicitly exported and imported. 
+To export a value or function from a module, the module.exports object is used. 
+To import a value or function from another module, the require function is used.
+
+Here's an example of a CommonJS module that exports a single function:
+
+javascript
+
+// greeting.js
+function sayHello(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+module.exports = sayHello;
+
+In this example, the greeting.js file defines a single function called sayHello, 
+which takes a name as an argument and logs a greeting to the console. 
+The module.exports statement at the end of the file exports the sayHello function so that it can be used in other modules.
+
+Here's an example of how the sayHello function could be used in another module:
+
+javascript
+
+// app.js
+const sayHello = require('./greeting.js');
+
+sayHello('Alice'); // Output: "Hello, Alice!"
+
+In this example, the app.js file uses the require function to import the sayHello function from the greeting.js module. 
+It then calls the sayHello function with the name "Alice", which logs a greeting to the console.
+
+
+
+
+
+2,ES6 module system
+
+ES6, also known as ECMAScript 2015, introduced a new module system for JavaScript that allows for more efficient and flexible management of modules.
+The ES6 module system uses a syntax that is similar to the CommonJS module system, but with some key differences.
+
+In the ES6 module system, modules are defined using the export keyword, which specifies which variables, 
+functions, or objects should be exported from the module. 
+Modules can also import functionality from other modules using the import keyword.
+
